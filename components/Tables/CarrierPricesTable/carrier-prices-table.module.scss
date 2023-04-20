@@ -1,0 +1,34 @@
+.activeTag {
+  color: var(--success-border);
+  background-color: var(--mono-tag-success);
+  border: 1px solid var(--success-border);
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+
+.inactiveTag {
+  color: #f53d3d;
+  background-color: #ffeaea;
+  border: 1px solid #f53d3d;
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+
+.headerTitle {
+  color: black;
+  text-overflow: ellipsis !important;
+}
+
+.tableContent {
+  // width: 850px;
+  box-shadow: none;
+}
+
+.filterIconContainer {
+  margin-top: -8px;
+
+  .filterIcon {
+    color: #bfbfbf;
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,84 @@
+.inputFiledStyle {
+  background-color: var(--off-white);
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.buttonInContent {
+  background: #ddeff4;
+  border-color: #122f30 !important;
+  border: 2px solid !important;
+  border-radius: 4px;
+  color: #2c7d8d;
+
+  span {
+    color: #131e20;
+  }
+}
+.multiBoxProductTable {
+  height: 450px;
+  :global {
+    .ant-table-body {
+      // overflow-y: auto !important;
+      height: 450px;
+    }
+  }
+}
+
+.printTableContainer {
+  @media print {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tableHeader {
+  display: none;
+  @media print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.showOnPrint {
+  display: none;
+  @media print {
+    display: flex;
+    justify-content: end;
+    // margin-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+.hideColumnOnPrint {
+  @media print {
+    display: none;
+  }
+}
+
+.printWidth {
+  @media print {
+    padding: 0px 100px;
+    margin-top: 40px;
+  }
+}
+
+.hideTable {
+  display: none;
+  @media print {
+    display: block;
+  }
+}
+
+.showTable {
+  display: block;
+  @media print {
+    display: none;
+  }
+}

@@ -1,0 +1,39 @@
+.tableContainer {
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.componentToPrint {
+  display: none;
+  @media print {
+    display: block;
+  }
+}
+
+.formatPrint {
+  @media print {
+    padding: 0 20px;
+  }
+}
+
+.formatPrintWidth {
+  @media print {
+    padding: 0 100px;
+  }
+}
+
+.formatPrintContainer {
+  @media print {
+    margin-left: 130px;
+  }
+}
+
+.formatPrintContainerFlex {
+  display: flex;
+
+  @media print {
+    display: flex;
+    flex-direction: column;
+  }
+}

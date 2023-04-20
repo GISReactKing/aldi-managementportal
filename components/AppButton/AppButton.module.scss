@@ -1,0 +1,10 @@
+.activeAppButton {
+  background-color: var(--primary-night);
+  color: white;
+}
+
+.disabledAppButton {
+  background-color: #6172ee;
+  cursor: not-allowed;
+  color: darkgray;
+}

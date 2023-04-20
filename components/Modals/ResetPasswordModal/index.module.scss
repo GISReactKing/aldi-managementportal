@@ -1,0 +1,67 @@
+.modalContent {
+  & > div {
+    max-width: 540px;
+    font-weight: 500;
+  }
+}
+
+.loginModalHeader {
+  text-align: center;
+  border: 0;
+  button {
+    margin: 0 !important;
+  }
+  .logoContent {
+    margin: auto;
+    padding-left: 15px;
+  }
+}
+.loginModalBody {
+  border: 0;
+  margin: auto;
+  max-width: 475px;
+  .titleWrapper {
+    font-size: 18px;
+    text-align: center;
+    .title {
+      font-weight: bold;
+      margin-bottom: 16px;
+      font-size: 32px;
+    }
+  }
+}
+
+.formWrapper {
+  .fieldsRow {
+    margin-top: 24px;
+    .formItem {
+      height: 54px;
+    }
+    .forgotButton {
+      cursor: pointer;
+    }
+  }
+  .loginBtnWrapper {
+    padding: 0 12px;
+    .submitBtn {
+      width: 100%;
+      background-image: linear-gradient(to left, #f6a200, #e74310);
+      height: 54px;
+      border-radius: 4px;
+      color: var(--white);
+      font-weight: bold;
+      margin-top: 20px;
+    }
+  }
+}
+
+.contactsInfo {
+  font-size: 16px;
+  margin-top: 32px;
+  text-align: center;
+  .link {
+    text-decoration: underline;
+    cursor: pointer;
+    color: #f6a200;
+  }
+}

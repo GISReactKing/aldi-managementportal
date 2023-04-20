@@ -1,0 +1,42 @@
+.formRow {
+  background-color: var(--white);
+  margin-top: 20px;
+}
+
+.formLabel {
+  font-weight: 600;
+  text-align: end;
+}
+.formValue {
+  //color: #0070f3;
+  font-weight: 600;
+}
+
+.buttonsGroup {
+  margin: 100px auto;
+  width: max-content;
+  height: content-box;
+  button {
+    padding: 0 24px;
+    line-height: 40px;
+  }
+  .cancelButton {
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+  }
+  .confirmButton {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+
+    &:hover {
+      border: 2px solid #1c87b9;
+    }
+  }
+}
+
+.logo {
+  position: absolute;
+}

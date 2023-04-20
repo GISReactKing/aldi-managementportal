@@ -1,0 +1,95 @@
+.content {
+  background-color: var(--white);
+  padding: 20px;
+
+  .rowContainer {
+    margin-bottom: 25px;
+    border: #b8b8b8;
+    border-style: solid;
+    border-width: 1px;
+
+    .attachedCarriers {
+      padding-left: 30px;
+    }
+
+    .valueContainer {
+      margin: 10px 0;
+    }
+  }
+}
+
+.createAmendListButton {
+  background: #ddeff4;
+  border-radius: 4px;
+  color: #2c7d8d;
+  width: 150px;
+
+  &:hover,
+  &:active {
+    background: #ddeff4;
+    color: #2c7d8d;
+  }
+
+  span {
+    color: #131e20;
+  }
+}
+
+.saveButton {
+  background: #ddeff4;
+  border-radius: 4px;
+  color: #2c7d8d;
+  width: 50px;
+
+  &:hover,
+  &:active {
+    background: #ddeff4;
+    color: #2c7d8d;
+  }
+
+  span {
+    color: #131e20;
+  }
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 7px;
+}
+
+h3.labelBlue {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 26px;
+  // color: var(--primary);
+}
+
+.exportButton {
+  width: 91px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary-night);
+  color: white;
+  border-color: var(--primary-night);
+
+  &:hover {
+    background-color: var(--primary-night);
+  }
+}
+
+.editButton {
+  width: 91px;
+  height: 40px;
+  background-color: var(--primary-night);
+  border-radius: 4px;
+  border-color: var(--primary-night);
+  right: 130px;
+
+  &:hover {
+    background-color: var(--primary-night);
+  }
+}

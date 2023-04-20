@@ -1,0 +1,38 @@
+.modalHeader {
+  color: blue;
+}
+.buttonsGroup {
+  text-align: end;
+  // margin-bottom: 20px;
+  button {
+    margin-left: 10px;
+    padding: 8px 24px;
+    height: 44px;
+  }
+  .cancelButton {
+    background-color: var(--white);
+    border: 2px solid var(--primary-night);
+    border-radius: 4px;
+  }
+  .submitActiveButton {
+    background-color: var(--primary-night);
+    color: var(--white);
+    border: 2px solid var(--primary-night);
+    border-radius: 4px;
+
+    &:hover {
+      border: 2px solid var(--primary-night);
+    }
+  }
+
+  .submitInactiveButton {
+    background-color: var(--mono-placeholder);
+    color: var(--white);
+    border: 2px solid var(--mono-placeholder);
+    border-radius: 4px;
+
+    &:hover {
+      border: 2px solid var(--mono-placeholder);
+    }
+  }
+}

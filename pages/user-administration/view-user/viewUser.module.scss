@@ -1,0 +1,112 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 18px;
+  .backIcon {
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .deleteButton {
+    color: #f53d3d;
+    border: 1px solid;
+    padding: 11px 28px;
+    border-radius: 4px;
+    margin-right: 24px;
+  }
+  .editButton {
+    padding: 12px 28px;
+    background: var(--primary);
+    border-radius: 4px;
+    color: var(--white);
+  }
+}
+
+.userInfoWrapper {
+  margin-top: 35px;
+  margin-left: 18px;
+  display: flex;
+  .userImageWrapper {
+    width: 140px;
+    img {
+      width: 140px;
+    }
+  }
+  .userInfo {
+    padding: 8px 0px;
+    // height: 162px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--mono);
+    font-weight: 500;
+
+    .company {
+      padding: 5px 4px;
+      border-radius: 4px;
+      // margin-left: 5px;
+      background-color: var(--light-blue);
+      color: var(--primary-sea);
+    }
+    .status {
+      color: var(--success-border);
+    }
+  }
+}
+.userInfoOtherWrapper {
+  margin-top: 40px;
+  margin-left: 18px;
+  .heading {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .otherInfo {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    font-weight: 700;
+    color: var(--mono-label);
+    span {
+      color: var(--mono);
+      font-weight: 500;
+    }
+  }
+}
+.userRolesWrapper {
+  margin-top: 40px;
+  margin-left: 18px;
+  .heading {
+    font-weight: bold;
+    font-size: 18px;
+  }
+  .otherInfo {
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+    font-weight: 500;
+    color: var(--mono-label);
+    width: 350px;
+    span {
+      color: var(--mono);
+    }
+    .infoHeading {
+      color: var(--mono-label);
+    }
+    .infoItem {
+      color: var(--mono);
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+    }
+    .infoContent {
+      display: flex;
+      flex-direction: column;
+      row-gap: 12px;
+      .roleBtn {
+        color: var(--primary-sea);
+        cursor: pointer;
+      }
+    }
+  }
+}

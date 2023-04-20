@@ -1,0 +1,10 @@
+
+.claims-page .ant-table-content {
+    overflow: unset !important;
+  }
+  .claims-page
+    .ant-table-ping-right:not(.ant-table-has-fix-right)
+    .ant-table-container::after {
+    display: none !important;
+  }
+  

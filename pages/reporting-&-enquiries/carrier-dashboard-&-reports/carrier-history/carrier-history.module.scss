@@ -1,0 +1,90 @@
+.customerSelection {
+  max-width: 468px;
+  height: 546px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(10, 10, 40, 0.07);
+  border-radius: 8px;
+  margin: 4% auto;
+  padding: 2.5rem;
+}
+
+.exportButton {
+  width: 91px;
+  // height: 40px;
+  // border-radius: 4px;
+  // background-color: #00005F;
+  // border-color: #00005F;
+  // &:hover {
+  //   background-color: #00005F;
+  // }
+}
+
+.addButton {
+  // height: 40px;
+  // background-color: #00005F;
+  // border-radius: 4px;
+  // border-color: #00005F;
+  right: 130px;
+
+  // &:hover {
+  //   background-color: #00005F;
+  // }
+}
+
+.buttonInPickerExceptions {
+  width: "200px";
+  height: 40px;
+  background: #00005f;
+  border-radius: 4px;
+  color: white;
+  padding: 0px 20px 0px 20px;
+  font-weight: bold;
+
+  // &:hover,
+  // &:active {
+  //   background: #00005f !important;
+  //   color: #ffffff !important;
+  // }
+
+  @media print {
+    display: none;
+  }
+}
+
+.percentage {
+  color: #00005f;
+  min-width: 70px !important;
+}
+
+.carrierMainContainer {
+}
+
+.printTableContainer {
+  @media print {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tableHeader {
+  display: none;
+  @media print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.showOnPrint {
+  display: none;
+  @media print {
+    display: flex;
+    justify-content: end;
+    padding-right: 20px;
+    width: 100%;
+  }
+}

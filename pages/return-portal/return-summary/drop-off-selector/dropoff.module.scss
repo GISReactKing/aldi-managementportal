@@ -1,0 +1,24 @@
+.counterBtn {
+  width: 36px;
+  height: 28px;
+  background-color: none;
+
+  border: 1px solid var(--mono-placeholder);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter {
+  width: 48px;
+  height: 28px;
+  background-color: none;
+  border: 1px solid var(--mono-placeholder);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 2px;
+  margin-right: 2px;
+}

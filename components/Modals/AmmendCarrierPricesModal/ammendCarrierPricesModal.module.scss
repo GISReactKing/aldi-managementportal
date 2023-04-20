@@ -1,0 +1,130 @@
+.modalHeader {
+  border-bottom: 0;
+  position: relative;
+  margin-bottom: 36px;
+  padding: 24px;
+  div {
+    position: absolute;
+    top: 25px;
+    font-weight: bold;
+  }
+
+  .methodContainer {
+    position: absolute;
+    top: 65px;
+    font-weight: 500;
+    //font-size: 18px;
+
+    .methodTitle {
+      color: var(--mono-label);
+    }
+
+    .methodValue {
+      color: var(--primary);
+    }
+  }
+}
+
+.permissionsModalFooter {
+  border-top: 0;
+  padding: 24px;
+}
+
+.modalBody {
+  padding: 8px 24px;
+  overflow-y: scroll;
+  max-height: 700px;
+  min-height: 700px;
+  padding-top: 0;
+}
+
+.customFormFirstRow {
+  margin-top: 0 !important;
+}
+
+.customFormRow {
+  margin-top: 16px;
+
+  input,
+  select {
+    height: 48px;
+    background-color: var(--off-white) !important;
+
+    &[type*="checkbox"] {
+      background-image: url("../../../public/icons/white-circle.svg") !important;
+      border-color: var(--primary);
+      background-color: var(--mono-placeholder) !important;
+      &:checked {
+        background-color: var(--primary) !important;
+      }
+    }
+  }
+
+  .headerTitle {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    color: var(--primary);
+  }
+
+  .addButton {
+    background-color: var(--light-blue);
+    color: var(--primary);
+    border: none;
+
+    svg {
+      margin-bottom: 5px;
+    }
+  }
+
+  .buttonsGroup {
+    text-align: end;
+    margin-bottom: 20px;
+    button {
+      margin-left: 24px;
+      padding: 8px 24px;
+      width: 87px;
+      height: 44px;
+    }
+    .cancelButton {
+      background-color: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 4px;
+    }
+    .submitActiveButton {
+      background-color: var(--primary);
+      color: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 4px;
+
+      &:hover {
+        border: 2px solid #1c87b9;
+      }
+    }
+
+    .submitInactiveButton {
+      background-color: var(--mono-placeholder);
+      color: var(--white);
+      border: 2px solid var(--mono-placeholder);
+      border-radius: 4px;
+
+      &:hover {
+        border: 2px solid var(--mono-placeholder);
+      }
+    }
+  }
+
+  .greenText {
+    color: var(--success-border);
+  }
+  .redText {
+    color: #f53d3d;
+  }
+
+  .inputInTable {
+    height: 32px;
+    border: 1px solid var(--mono-input);
+    background-color: #f4f4f4 !important;
+    text-align: center;
+  }
+}

@@ -1,0 +1,136 @@
+.modalHeader {
+  border-bottom: 0;
+  position: relative;
+  padding: 24px;
+  div {
+    position: absolute;
+    top: 25px;
+    font-weight: bold;
+  }
+
+  .methodContainer {
+    position: absolute;
+    top: 65px;
+    font-weight: bold;
+    font-size: 18px;
+
+    .methodTitle {
+      color: var(--mono-label);
+    }
+
+    .methodValue {
+      color: var(--primary);
+    }
+  }
+}
+
+.permissionsModalFooter {
+  border-top: 0;
+  padding: 24px;
+}
+
+.modalBody {
+  padding: 8px 24px;
+  margin-top: 10px;
+  .wrongItemSection {
+    margin-bottom: 30px;
+  }
+  .label {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: var(--mono-label);
+  }
+  .addWrongItem {
+    background: var(--primary-sea);
+    border-radius: 4px;
+    width: 190px;
+    height: 40px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.75px;
+    color: var(--white);
+  }
+  .deleteWrongItem {
+    background: #ffeaea;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+  }
+}
+
+.customFormFirstRow {
+  margin-top: 0 !important;
+}
+
+.customFormRow {
+  margin-top: 16px;
+
+  input,
+  select {
+    height: 48px;
+    background-color: var(--off-white) !important;
+
+    &[type*="checkbox"] {
+      background-image: url("../../../public/icons/white-circle.svg") !important;
+      border-color: var(--primary);
+      background-color: var(--mono-placeholder) !important;
+      &:checked {
+        background-color: var(--primary) !important;
+      }
+    }
+  }
+
+  .headerTitle {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.75px;
+    color: var(--primary);
+  }
+
+  .buttonsGroup {
+    text-align: end;
+    margin-bottom: 20px;
+    button {
+      margin-left: 24px;
+      padding: 8px 24px;
+      height: 44px;
+    }
+    .cancelButton {
+      background-color: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 4px;
+    }
+    .submitActiveButton {
+      background-color: var(--primary);
+      color: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 4px;
+
+      &:hover {
+        border: 2px solid #1c87b9;
+      }
+    }
+
+    .submitInactiveButton {
+      background: var(--primary-sea);
+      color: var(--white);
+      border-radius: 4px;
+
+      &:hover {
+        border: 2px solid var(--mono-placeholder);
+      }
+    }
+  }
+
+  .greenText {
+    color: var(--success-border);
+  }
+  .redText {
+    color: #f53d3d;
+  }
+}

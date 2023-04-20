@@ -1,0 +1,12 @@
+.componentToPrint {
+  display: none;
+  @media print {
+    display: block;
+  }
+}
+
+.formatPrint {
+  @media print {
+    padding: 0 20px;
+  }
+}

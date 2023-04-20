@@ -1,0 +1,132 @@
+.roleFormRow {
+  margin-bottom: 20px;
+  width: 420px;
+
+  input,
+  select {
+    height: 48px;
+    background-color: var(--off-white) !important;
+  }
+}
+
+.permissionsDataContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 20px;
+
+  .toggleContainer {
+    height: 56px;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    background-color: var(--off-white);
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  .detailPermissionContainer {
+    width: 400px;
+    border: 2px solid var(--mono-input);
+    border-radius: 9px;
+
+    .detailHeaderContainer {
+      height: 56px;
+      justify-content: space-between;
+      display: flex;
+      padding: 0 12px;
+      align-items: center;
+    }
+
+    .detailContentContainer {
+      height: 400px;
+      overflow: scroll;
+
+      .detailContentItemContainer {
+        display: flex;
+        flex-direction: column;
+        padding: 12px;
+
+        .detailContentItemValuesContainer {
+          padding-left: 20px;
+          padding-top: 8px;
+        }
+      }
+    }
+  }
+
+  .subMainTitle {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.buttonsGroup {
+  width: max-content;
+  margin-left: auto;
+  margin-top: 20px;
+  button {
+    margin-left: 24px;
+    padding: 8px 24px;
+  }
+  .cancelButton {
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+  }
+  .nextButton {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+
+    &:hover {
+      border: 2px solid #1c87b9;
+    }
+  }
+}
+
+.printTableContainer {
+  @media print {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tableHeader {
+  display: none;
+  @media print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.showOnPrint {
+  display: none;
+  @media print {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+.hideColumnOnPrint {
+  @media print {
+    display: none;
+  }
+}
+
+.printWidth {
+  @media print {
+    padding: 0px 100px;
+    margin-top: 40px;
+  }
+}

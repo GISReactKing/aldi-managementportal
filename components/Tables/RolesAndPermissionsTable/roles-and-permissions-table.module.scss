@@ -1,0 +1,14 @@
+.redButton {
+  border-radius: 3px;
+}
+
+.blueButton {
+  border-radius: 3px;
+  margin-right: 20px;
+}
+
+.hideColumnOnPrint {
+  @media print {
+    display: none;
+  }
+}

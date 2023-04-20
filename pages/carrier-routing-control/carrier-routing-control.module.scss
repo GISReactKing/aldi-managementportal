@@ -1,0 +1,135 @@
+.buttonInHeader {
+  color: var(--white);
+  border-color: var(--primary-night);
+  border-radius: 4px;
+  line-height: 1.15;
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.componentToPrint {
+  display: none;
+  @media print {
+    display: block;
+  }
+}
+
+.formatPrint {
+  @media print {
+    padding: 0 50px;
+    text-overflow: ellipsis !important;
+  }
+}
+
+.formatPrintWidth {
+  @media print {
+    padding: 0 100px;
+    margin-right: 130;
+  }
+}
+
+.buttonInContent {
+  background: #ddeff4;
+  border-color: #122f30 !important;
+  border: 2px solid !important;
+  border-radius: 4px;
+  color: #2c7d8d;
+  line-height: 1.15;
+
+  &:hover,
+  &:active {
+    background: #ddeff4;
+    color: #2c7d8d;
+  }
+
+  span {
+    color: #131e20;
+  }
+}
+
+.buttonInPicker {
+  background: #ddeff4;
+  border-radius: 4px;
+  color: #2c7d8d;
+
+  &:hover,
+  &:active {
+    background: #ddeff4;
+    color: #2c7d8d;
+  }
+
+  span {
+    color: #131e20;
+  }
+
+  @media print {
+    display: none;
+  }
+}
+
+.fieldTitle {
+  text-align: end;
+}
+
+.blueText {
+  color: blue;
+  font-weight: bold;
+}
+.redText {
+  color: #f53d3d;
+  font-weight: bold;
+}
+
+.componentToPrint {
+  display: none;
+  @media print {
+    display: block;
+  }
+}
+
+.formatPrint {
+  @media print {
+    padding: 0 20px;
+  }
+}
+
+.formatPrintWidth {
+  @media print {
+    padding: 0 100px;
+  }
+}
+
+.formatPrintContainer {
+  @media print {
+    margin-left: 130px;
+  }
+}
+
+.formatPrintContainerFlex {
+  display: flex;
+
+  @media print {
+    display: flex;
+    flex-direction: column;
+    .onPrint {
+      @media print {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+
+    .hideButton {
+      @media print {
+        display: none;
+      }
+    }
+  }
+}
+
+.mainPrintTableContainer {
+  @media print {
+    zoom: 80%;
+  }
+}

@@ -1,0 +1,64 @@
+.bodyContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.rightContainer {
+  width: 65%;
+  //margin-top: 32px;
+  .borderView {
+    display: flex;
+    flex-direction: column;
+    border: 1px dotted gray;
+    padding: 16px;
+    border-radius: 4px;
+  }
+  .btnContainer {
+    padding-top: 32px;
+    padding-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 1000px;
+  }
+  .itemContainer {
+    display: flex;
+    flex-direction: column;
+    //align-items: center
+  }
+
+  .liItem {
+    margin-bottom: 8px;
+  }
+}
+
+.leftContainer {
+  width: 35%;
+  margin-left: 15%;
+  margin-right: 10%;
+
+  .liItemLeft {
+    margin-bottom: 8px;
+    text-align: end;
+  }
+}
+
+.headerButton {
+  color: var(--white);
+  background-color: transparent;
+  margin-left: 20px;
+  border-radius: 4px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    background-color: transparent;
+    color: #38ffd3;
+  }
+
+  .closeIcon {
+    svg {
+      margin-bottom: 5px;
+    }
+  }
+}

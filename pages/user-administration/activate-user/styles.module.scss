@@ -1,0 +1,51 @@
+.buttonInHeader {
+  border-color: var(--primary-night);
+
+  &:hover {
+    color: var(--white);
+  }
+}
+
+.printTableContainer {
+  @media print {
+    display: block;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tableHeader {
+  display: none;
+  @media print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.showOnPrint {
+  display: none;
+  @media print {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+.hideColumnOnPrint {
+  @media print {
+    display: none;
+  }
+}
+
+.printWidth {
+  @media print {
+    padding: 0px 100px;
+    margin-top: 40px;
+  }
+}

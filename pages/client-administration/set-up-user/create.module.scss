@@ -1,0 +1,166 @@
+.wrapper {
+  display: flex;
+  padding-left: 8px;
+  .content {
+    width: 100%;
+  }
+  .buttonsGroup {
+    width: max-content;
+    margin-left: auto;
+    margin-top: 20px;
+    button {
+      margin-left: 24px;
+      padding: 8px 24px;
+    }
+    .cancelButton {
+      background-color: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 5px;
+    }
+    .nextButton {
+      background-color: var(--primary);
+      color: var(--white);
+      border: 2px solid var(--primary);
+      border-radius: 5px;
+
+      &:hover {
+        border: 2px solid #1c87b9;
+      }
+    }
+
+    .nextButtonDisabled {
+      background-color: var(--mono-placeholder);
+      border-radius: 5px;
+      color: var(--white);
+      cursor: default;
+      border: 2px solid var(--mono-placeholder);
+    }
+  }
+  .dropdownSelectedItem {
+    background-color: var(--off-white);
+    border: 1px solid var(--mono-input);
+    padding: 6px 16px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    display: flex;
+    justify-content: space-between;
+    letter-spacing: 0.75px;
+    color: var(--mono);
+
+    a {
+      color: var(--primary-sea);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.75px;
+    }
+  }
+
+  .passwordViewer {
+    top: 12px;
+    position: absolute;
+    right: 10px;
+    z-index: 1;
+    cursor: pointer;
+  }
+
+  .checkDataTitle {
+    font-weight: 500;
+    margin-right: 10px;
+  }
+
+  .checkDataMainTitle {
+    font-weight: 700;
+  }
+
+  .roleAndPermissionsDataContainer {
+    margin-top: 15px;
+
+    a {
+      color: var(--primary-sea);
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: 0.75px;
+    }
+  }
+
+  .informationRow {
+    margin-top: 10px;
+  }
+}
+.buttonsGroup {
+  width: max-content;
+  margin-left: auto;
+  margin-top: 20px;
+  button {
+    margin-left: 24px;
+    padding: 8px 24px;
+  }
+  .cancelButton {
+    background-color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+  }
+  .nextButton {
+    background-color: var(--primary);
+    color: var(--white);
+    border: 2px solid var(--primary);
+    border-radius: 5px;
+
+    &:hover {
+      border: 2px solid #1c87b9;
+    }
+  }
+
+  .nextButtonDisabled {
+    background-color: var(--mono-placeholder);
+    border-radius: 5px;
+    color: var(--white);
+    cursor: default;
+    border: 2px solid var(--mono-placeholder);
+  }
+}
+.roleContainer {
+  width: 400px;
+  margin: auto;
+}
+
+.checkDataContainer {
+  width: 400px;
+  margin: auto;
+  padding-left: 40px;
+}
+
+.rolePermissionContainer {
+  width: 900px;
+}
+
+.newRolePermissionContainer {
+  width: 100%;
+}
+
+.createUserFormRow {
+  margin-bottom: 20px;
+
+  input,
+  select {
+    background-color: var(--off-white) !important;
+
+    &[type*="checkbox"] {
+      height: initial !important;
+      background-image: url("../../../public/icons/white-circle.svg") !important;
+      border-color: var(--primary) !important;
+      background-color: var(--mono-placeholder) !important;
+      &:checked {
+        background-color: var(--primary) !important;
+      }
+    }
+  }
+}

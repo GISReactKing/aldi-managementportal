@@ -1,0 +1,72 @@
+.filterDropdown {
+  width: 200px;
+  .filterDropdownItem {
+    padding: 10px 16px;
+    border-bottom: 1px solid #d7d7d7;
+    cursor: pointer;
+  }
+  .filterDropdownBtnWrapper {
+    text-align: right;
+    .filterDropdownBtnReset {
+      border: 1px solid var(--primary);
+      margin-right: 16px;
+      padding: 4px 8px;
+    }
+    .filterDropdownBtn {
+      background-color: var(--primary);
+      color: var(--white);
+      margin: 16px 0;
+      padding: 4px 8px;
+      margin-right: 8px;
+    }
+  }
+  .filterInput {
+    margin-top: 4px;
+    width: 91px;
+    height: 32px;
+  }
+}
+
+.printTableContainer {
+  @media print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.tableHeader {
+  display: none;
+  @media print {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.showOnPrint {
+  display: none;
+  @media print {
+    display: flex;
+    justify-content: end;
+    margin-top: 20px;
+    padding-right: 20px;
+    width: 100%;
+  }
+}
+
+.hideColumnOnPrint {
+  @media print {
+    display: none;
+  }
+}
+
+.printWidth {
+  @media print {
+    padding: 0px 40px;
+    margin-top: 40px;
+  }
+}

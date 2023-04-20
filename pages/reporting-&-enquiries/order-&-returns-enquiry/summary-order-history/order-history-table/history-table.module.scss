@@ -1,0 +1,34 @@
+.activeTag {
+  color: #227A64;
+  background-color: #D5FAF1;
+  border: 1px solid #227A64;
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+
+.inactiveTag {
+  color: #F53D3D;
+  background-color: #FFEAEA;
+  border: 1px solid #F53D3D;
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+
+.headerTitle {
+  color: #959595;
+}
+
+.tableContent {
+  th {
+    //border: none !important;
+  }
+}
+
+.filterIconContainer {
+  margin-top: -8px;
+  .filterIcon {
+    color: #bfbfbf;
+    font-size: 12px;
+
+  }
+}

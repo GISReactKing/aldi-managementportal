@@ -1,0 +1,125 @@
+.customerSelection {
+  max-width: 468px;
+  height: 546px;
+  background: #ffffff;
+  box-shadow: 0px 4px 8px rgba(10, 10, 40, 0.07);
+  border-radius: 8px;
+  margin: 4% auto;
+  padding: 2.5rem;
+}
+
+.exportButton {
+  width: 90px;
+  height: 40px;
+  border-radius: 4px;
+  // background-color: #00005F;
+  // border-color: #00005F;
+  // &:hover {
+  //   background-color: #00005F;
+  // }
+}
+
+.confirmButton {
+  width: 160px;
+  height: 40px;
+  right: 120px;
+}
+
+.activeConfirmButton {
+  width: 160px;
+  height: 40px;
+  // right: 120px;
+  background-color: #00005f;
+  border-radius: 4px;
+  border-color: #00005f;
+  &:hover {
+    background-color: #00005f;
+  }
+}
+
+.inactiveConfirmButton {
+  width: 160px;
+  height: 40px;
+  // right: 120px;
+  background-color: #6172ee;
+  border-radius: 4px;
+  border-color: #6172ee;
+  &:hover {
+    background-color: #6172ee;
+  }
+}
+
+.confirmException {
+  right: 295px;
+}
+
+.confirmUndo {
+  right: 120px;
+}
+
+.backButton {
+  width: 90px;
+  height: 40px;
+  right: 470px;
+}
+
+.actionButton {
+  width: 110px;
+  height: 40px;
+  background-color: #00005f;
+  border-radius: 4px;
+  border-color: #00005f;
+  &:hover {
+    background-color: #00005f;
+  }
+}
+.action {
+  cursor: pointer;
+}
+
+.actionDelete {
+  cursor: pointer;
+
+  svg {
+    color: red;
+  }
+}
+
+.actionDeleteDisabled {
+  cursor: not-allowed;
+
+  svg {
+    color: rgb(238, 105, 105);
+  }
+}
+
+.minMaxError {
+  border: 1px solid #ffa39e;
+}
+
+// .fontText{
+//   font-size: 12px !important;
+// }
+
+.componentToPrint {
+  display: none;
+  @media print {
+    display: block;
+    @page {
+      size: landscape;
+    }
+  }
+}
+
+.formatPrint {
+  @media print {
+    padding: 0 20px;
+    @page {
+      size: landscape;
+    }
+  }
+}
+
+.ant-table-column-sorters {
+  justify-content: center !important;
+}

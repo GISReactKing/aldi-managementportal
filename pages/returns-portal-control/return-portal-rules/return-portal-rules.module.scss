@@ -1,0 +1,108 @@
+.content {
+  background-color: var(--white);
+  padding: 20px;
+
+  .rowContainer {
+    margin-bottom: 25px;
+
+    .valueContainerRight {
+      background-color: var(--off-white);
+      border: 1px solid var(--mono-input);
+      box-sizing: border-box;
+      border-radius: 4px;
+      padding: 16px;
+      margin-top: 5px;
+    }
+  }
+
+  .titleNumber {
+    color: #101521;
+    margin-right: 10px;
+    font-weight: 600;
+  }
+
+  .titleContent {
+    color: #101521;
+    font-weight: 600;
+  }
+
+  .valueContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-bottom: 15px;
+  }
+
+  .valueContainerLeft {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  .characterCount {
+    position: absolute;
+    right: 47px;
+    bottom: 50px;
+  }
+
+  .inputBetweenTexts {
+    //width: auto;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 0;
+    text-align: center;
+  }
+
+  .labelColor {
+    color: var(--mono);
+  }
+}
+
+.editButton {
+  width: 91px;
+  height: 40px;
+  background-color: var(--primary-night);
+  border-radius: 4px;
+  border-color: var(--primary-night);
+  right: 130px;
+
+  &:hover {
+    background-color: var(--primary-night);
+  }
+}
+
+.undoButton {
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  border-color: red;
+  color: red;
+  right: 180px;
+
+  // &:hover {
+  //   border-color: red;
+  //   color: red;
+  // }
+}
+
+.saveButton {
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary-night);
+  border-color: var(--primary-night);
+  &:hover {
+    background-color: var(--primary-night);
+  }
+}
+
+.exportButton {
+  width: 91px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: var(--primary-night);
+  color: white;
+  border-color: var(--primary-night);
+
+  &:hover {
+    background-color: var(--primary-night);
+  }
+}

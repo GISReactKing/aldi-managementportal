@@ -1,0 +1,49 @@
+.roleFormRow {
+  margin-bottom: 20px;
+
+  input, select {
+    height: 40px;
+    background-color: #FCFCFC !important;
+  }
+}
+.col1{
+  width: 100px;
+}
+.formItem1{
+  width: 80px;
+}
+.formItem2{
+  width: 350px;
+}
+.buttonsGroup {
+  width: max-content;
+  margin-left: auto;
+  margin-top: 20px;
+  button {
+    margin-left: 24px;
+    padding: 8px 24px;
+  }
+  .cancelButton {
+    background-color: #ffffff;
+    border: 2px solid #5bc5f1;
+    border-radius: 5px;
+  }
+  .nextButton {
+    background-color: #5bc5f1;
+    color: #ffffff;
+    border: 2px solid #5bc5f1;
+    border-radius: 5px;
+
+    &:hover {
+      border: 2px solid #1c87b9;
+    }
+  }
+}
+.redButton {
+  border-radius: 3px;
+}
+
+.blueButton {
+  border-radius: 3px;
+  margin-right: 20px;
+}
